@@ -1,0 +1,12 @@
+#选择排序
+#在未排序的序列中找到最小元素，存放到排序序列的起始位置，然后从剩余的未排序的元素中继续寻找最小元素，存放至排序序列的末尾
+#python代码如下：
+def element(arr):
+    for i in range(len(arr)-1):
+        mixElement=i
+        for j in range(i+1,len(arr)):
+            if arr[j] < arr[minElement]:
+                minElement = j
+         if i != minElement:
+             arr[i],arr[minElement] = arr[minElement],arr[i]
+   renturn arr
